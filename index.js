@@ -24,7 +24,20 @@ ESERCIZIO 2
   num >= 20 - mostra in console "Huge"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+let number = 17;
+if (number < 5) {
+  console.log("Tiny");
+} else if (number < 10) {
+  console.log("Small");
+} else if (number < 15) {
+  console.log("Medium");
+} else if (number < 20) {
+  console.log("Large");
+} else {
+  console.log("Huge");
+}
+*/
 
 //ESERCIZI SUI CICLI:
 
@@ -32,13 +45,43 @@ ESERCIZIO 2
   Mostra i numeri da 0 a 10 (incluso) in ordine ascendente, ma evitando di mostrare i numeri 3 e 8 (suggerimento: ripassa l'uso di "continue").
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/*
+for (let i = 0; i <= 10; i++) {
+  if (i != 3 && i != 8) {
+    console.log(i);
+  } else {
+    continue;
+  }
+}
+*/
 
 /* ESERCIZIO 11
   Scrivi un ciclo in JavaScript per iterare da 0 a 15. Per ciascun elemento, il ciclo deve controllare the il valore corrente sia pari o dispari, e mostrare il risultato in console.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+
+let pari = 0;
+let dispari = 0;
+for (let i = 0; i < 15; i++) {
+  if (i % 2 == 0) {
+    console.log("il numero " + i + " è pari");
+    pari++;
+  } else {
+    console.log("il numero " + i + " è dispari");
+    dispari++;
+  }
+}
+console.log("=====================");
+console.log(
+  "alla fine di questo ciclo ho trovato " +
+    pari +
+    " numeri pari e " +
+    dispari +
+    " numeri dispari."
+);
+
+*/
 
 //ESERCIZI EXTRA NON OBBLIGATORI
 
@@ -46,7 +89,37 @@ ESERCIZIO 2
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* let num1 = {
+  nome: "numero 1",
+  valore: 7,
+};
+
+let num2 = {
+  nome: "numero 2",
+  valore: 15,
+};
+
+let somma = num1.valore + num2.valore;
+let dif = num1.valore - num2.valore;
+let numeriUgualiAOtto = 0;
+let numeri = [num1, num2];
+
+for (let i = 0; i < 2; i++) {
+  if (numeri[i].valore === 8) {
+    console.log(numeri[i].nome + " è uguale a 8!");
+    numeriUgualiAOtto++;
+  }
+}
+if (numeriUgualiAOtto === 0) {
+  console.log("nessun numero è = a 8");
+}
+console.log("============================================");
+if (somma === 8 || dif === 8 || dif === -8) {
+  console.log("somma o diff = 8");
+} else {
+  console.log("somma o differenza diversa da 8");
+}
+*/
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
