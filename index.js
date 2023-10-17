@@ -89,7 +89,7 @@ console.log(
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* */
+/* 
 
 let num1 = {
   nome: "numero 1",
@@ -131,6 +131,7 @@ if (somma === 8) {
   console.log("ne somma ne differenza dei due numeri è uguale a 8...");
   console.log("========================FINE====================");
 }
+*/
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
