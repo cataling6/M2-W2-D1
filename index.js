@@ -89,14 +89,14 @@ console.log(
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/* let num1 = {
+/*  let num1 = {
   nome: "numero 1",
-  valore: 7,
+  valore: 1,
 };
 
 let num2 = {
   nome: "numero 2",
-  valore: 15,
+  valore: 9,
 };
 
 let somma = num1.valore + num2.valore;
@@ -111,15 +111,16 @@ for (let i = 0; i < 2; i++) {
   }
 }
 if (numeriUgualiAOtto === 0) {
-  console.log("nessun numero è = a 8");
+  console.log("nessuno dei due numeri è uguale a 8");
 }
 console.log("============================================");
-if (somma === 8 || dif === 8 || dif === -8) {
-  console.log("somma o diff = 8");
+if (somma === 8) {
+  console.log("somma dei due numeri uguale a 8");
+} else if (dif === 8 || dif === -8) {
+  console.log("differenza dei due numeri uguale a 8");
 } else {
-  console.log("somma o differenza diversa da 8");
-}
-*/
+  console.log("ne somma ne differenza dei due numeri è uguale a 8...");
+}/*
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
