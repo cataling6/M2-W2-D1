@@ -89,22 +89,24 @@ console.log(
   Scrivi un algoritmo per verificare che, dati due numeri interi, il valore di uno di essi sia 8 oppure se la loro addizione/sottrazione sia uguale a 8.
 */
 
-/*  let num1 = {
+/* */
+
+let num1 = {
   nome: "numero 1",
-  valore: 1,
+  valore: 16,
 };
 
 let num2 = {
   nome: "numero 2",
-  valore: 9,
+  valore: 8,
 };
 
 let somma = num1.valore + num2.valore;
 let dif = num1.valore - num2.valore;
 let numeriUgualiAOtto = 0;
 let numeri = [num1, num2];
-
-for (let i = 0; i < 2; i++) {
+console.log("========================INIZIO====================");
+for (let i = 0; i < numeri.length; i++) {
   if (numeri[i].valore === 8) {
     console.log(numeri[i].nome + " è uguale a 8!");
     numeriUgualiAOtto++;
@@ -113,14 +115,22 @@ for (let i = 0; i < 2; i++) {
 if (numeriUgualiAOtto === 0) {
   console.log("nessuno dei due numeri è uguale a 8");
 }
-console.log("============================================");
+console.log("-----------------------------------");
 if (somma === 8) {
-  console.log("somma dei due numeri uguale a 8");
+  if (dif === 8 || dif === -8) {
+    console.log(" somma e differenza dei due numeri è uguale a 8");
+    console.log("========================FINE====================");
+  } else {
+    console.log("somma dei due numeri uguale a 8");
+    console.log("========================FINE====================");
+  }
 } else if (dif === 8 || dif === -8) {
   console.log("differenza dei due numeri uguale a 8");
+  console.log("========================FINE====================");
 } else {
   console.log("ne somma ne differenza dei due numeri è uguale a 8...");
-}/*
+  console.log("========================FINE====================");
+}
 
 /* ESERCIZIO EXTRA 2
 Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carrello dell'utente in una variabile "totalShoppingCart".
