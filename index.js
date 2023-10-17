@@ -127,15 +127,71 @@ Stai lavorando su un sito di e-commerce. Stai salvando il saldo totale del carre
 C'è una promozione in corso: se il totale del carrello supera 50, l'utente ha diritto alla spedizione gratuita (altrimenti la spedizione ha un costo fisso pari a 10).
 Crea un algoritmo che determini l'ammontare totale che deve essere addebitato all'utente per il checkout.
 */
+/*
+let totalShoppingCart = 51;
+let spedizione = 10;
+let totale = 0;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (totalShoppingCart === 0) {
+  console.log("Il tuo carrello è vuoto ;) ");
+} else if (totalShoppingCart > 50) {
+  spedizione = 0;
+  totale = totalShoppingCart;
+  console.log(
+    "La tua spesa è pari a " +
+      totalShoppingCart +
+      " di conseguenza hai diritto alla spedizione gratis!!!"
+  );
+  console.log("Totale spesa: ", totale);
+} else {
+  totale = spedizione + totalShoppingCart;
+  console.log(
+    "La tua spesa totale è pari a " +
+      totale +
+      " (spesa: " +
+      totalShoppingCart +
+      " + spedizione: " +
+      spedizione +
+      ")."
+  );
+}
+*/
 
 /* ESERCIZIO EXTRA 3
   Oggi è il Black Friday e viene applicato il 20% su ogni prodotto.
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
+/*
+let totalShoppingCart = 60;
+let scontoVentiPerCento = (totalShoppingCart / 100) * 20;
+let spedizione = 10;
+let totale = 0;
+let prezzoScontato = totalShoppingCart - scontoVentiPerCento;
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+if (prezzoScontato === 0) {
+  console.log("Il tuo carrello è vuoto ;) ");
+} else if (prezzoScontato > 50) {
+  spedizione = 0;
+  totale = prezzoScontato;
+  console.log(
+    "La tua spesa è pari a " +
+      prezzoScontato +
+      " di conseguenza hai diritto alla spedizione gratis!!!"
+  );
+  console.log("Totale spesa: ", totale);
+} else {
+  totale = spedizione + prezzoScontato;
+  console.log(
+    "La tua spesa totale è pari a " +
+      totale +
+      " (spesa: " +
+      prezzoScontato +
+      " + spedizione: " +
+      spedizione +
+      ")."
+  );
+} 
+*/
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -143,8 +199,34 @@ Crea un algoritmo che determini l'ammontare totale che deve essere addebitato al
   Es. se isMale e' vero, il valore di gender deve essere "male"
 */
 
-/* SCRIVI QUI LA TUA RISPOSTA */
+/* 
+
+*/
+/*
+let isMale = false;
+
+let gender = "";
+
+isMale ? (gender = "maschio") : (gender = "femmina");
+
+console.log(gender);
+*/
 
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
+*/
+
+/*
+for (let i = 0; i < 100; i++) {
+  if (i % 3 === 0 && i !== 0) {
+    if (i % 5 === 0) {
+      console.log("FIZZ BUZZ");
+    }
+    console.log("fizz");
+  } else if (i % 5 === 0 && i !== 0) {
+    console.log("buzz");
+  } else {
+    console.log(i);
+  }
+}
 */
