@@ -173,7 +173,7 @@ if (totalShoppingCart === 0) {
   Modifica la risposta precedente includendo questa nuova promozione nell'algoritmo, determinando, usando l'algoritmo del codice precedente, se le spedizioni siano gratuite oppure no e e calcolando il totale.
 */
 /*
-let totalShoppingCart = 60;
+let totalShoppingCart = 65;
 let scontoVentiPerCento = (totalShoppingCart / 100) * 20;
 let spedizione = 10;
 let totale = 0;
@@ -201,8 +201,7 @@ if (prezzoScontato === 0) {
       spedizione +
       ")."
   );
-} 
-*/
+}*/
 
 /*  ESERCIZIO EXTRA 4
   Usa un operatore ternaio per assegnare ad una variabile chiamata "gender" i valori "male" o "female".
@@ -226,8 +225,7 @@ console.log(gender);
 /* ESERCIZIO EXTRA 5
   Scrivi un algoritmo che iteri i numeri da 1 a 100, stampandoli in console. Se un valore tuttavia è multiplo di 3 (operatore modulo!), stampa al suo posto la parola "Fizz" e se il numero è multiplo di 5, stampa "Buzz". Se le condizioni si verificano entrambe, stampa "FizzBuzz".
 */
-
-/* 
+/*
 for (let i = 0; i <= 100; i++) {
   if (i % 3 === 0 && i !== 0) {
     if (i % 5 === 0) {
